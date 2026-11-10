@@ -1,17 +1,22 @@
 {
   "expo": {
-    "name": "Project_GyM",
-    "slug": "Project_GyM",
+    "name": "GymPulse",
+    "slug": "gympulse",
+    "scheme": "gympulse",
     "version": "1.0.0",
+    "description": "GymPulse - Enterprise Indian Gym Management, Attendance & Fitness App",
     "orientation": "portrait",
+    "primaryColor": "#CCFF00",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "automatic",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "in.ironcore.gympulse"
     },
     "android": {
+      "package": "in.ironcore.gympulse",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#121212",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
@@ -20,6 +25,9 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }

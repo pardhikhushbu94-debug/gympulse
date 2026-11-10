@@ -1,0 +1,131 @@
+export const palette = {
+  volt: '#CCFF00',
+  voltDark: '#729600',
+  voltGlow: 'rgba(204, 255, 0, 0.25)',
+  orange: '#FF6B00',
+  orangeDark: '#EA580C',
+  charcoalDark: '#0D0F12',
+  surfaceDark: '#161A1F',
+  elevatedDark: '#1F242D',
+  borderDark: '#282F3B',
+  textLight: '#F8FAFC',
+  textMutedDark: '#94A3B8',
+
+  white: '#FFFFFF',
+  offWhite: '#F8FAFC',
+  surfaceLight: '#FFFFFF',
+  elevatedLight: '#F1F5F9',
+  borderLight: '#E2E8F0',
+  textDark: '#0F172A',
+  textMutedLight: '#64748B',
+
+  success: '#10B981',
+  warning: '#F59E0B',
+  danger: '#EF4444',
+  info: '#3B82F6',
+};
+
+export const darkTheme = {
+  isDark: true,
+  colors: {
+    background: '#0D0F12',
+    card: '#161A1F',
+    cardElevated: '#1F242D',
+    border: '#282F3B',
+    borderSubtle: '#1C222B',
+    primary: '#CCFF00',
+    primaryContrast: '#0A0D02',
+    primaryGlow: 'rgba(204, 255, 0, 0.2)',
+    secondary: '#FF6B00',
+    text: '#F8FAFC',
+    textSecondary: '#94A3B8',
+    textMuted: '#64748B',
+    success: '#10B981',
+    warning: '#F59E0B',
+    danger: '#EF4444',
+    badgeBg: '#1A2314',
+    badgeText: '#CCFF00',
+  },
+  spacing: {
+    xs: 4,
+    sm: 8,
+    md: 16,
+    lg: 24,
+    xl: 32,
+    xxl: 48,
+  },
+  radii: {
+    sm: 8,
+    md: 14,
+    lg: 20,
+    xl: 28,
+    full: 9999,
+  },
+  typography: {
+    display: {
+      fontSize: 34,
+      fontWeight: '800' as const,
+      letterSpacing: -0.5,
+    },
+    h1: {
+      fontSize: 26,
+      fontWeight: '700' as const,
+      letterSpacing: -0.3,
+    },
+    h2: {
+      fontSize: 20,
+      fontWeight: '700' as const,
+      letterSpacing: -0.2,
+    },
+    h3: {
+      fontSize: 17,
+      fontWeight: '600' as const,
+    },
+    body: {
+      fontSize: 15,
+      fontWeight: '400' as const,
+      lineHeight: 22,
+    },
+    bodyBold: {
+      fontSize: 15,
+      fontWeight: '600' as const,
+    },
+    caption: {
+      fontSize: 12,
+      fontWeight: '500' as const,
+    },
+    numberDisplay: {
+      fontSize: 32,
+      fontWeight: '800' as const,
+      letterSpacing: 0.5,
+    },
+  },
+};
+
+export const lightTheme = {
+  isDark: false,
+  colors: {
+    background: '#F8FAFC',
+    card: '#FFFFFF',
+    cardElevated: '#F1F5F9',
+    border: '#E2E8F0',
+    borderSubtle: '#F1F5F9',
+    primary: '#729600',
+    primaryContrast: '#FFFFFF',
+    primaryGlow: 'rgba(114, 150, 0, 0.2)',
+    secondary: '#EA580C',
+    text: '#0F172A',
+    textSecondary: '#475569',
+    textMuted: '#94A3B8',
+    success: '#059669',
+    warning: '#D97706',
+    danger: '#DC2626',
+    badgeBg: '#F0FDF4',
+    badgeText: '#166534',
+  },
+  spacing: darkTheme.spacing,
+  radii: darkTheme.radii,
+  typography: darkTheme.typography,
+};
+
+export type Theme = typeof darkTheme;
